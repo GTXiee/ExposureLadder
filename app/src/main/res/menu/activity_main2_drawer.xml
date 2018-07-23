@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/nav_drawer_top">
+        <item
+            android:id="@+id/nav_challenges"
+            android:icon="@drawable/ic_directions_walk_black_24dp"
+            android:title="Challenges" />
+        <item
+            android:id="@+id/nav_ladders"
+            android:icon="@drawable/ic_ladder"
+            android:title="Ladders" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:title="Communicate"
+        android:id="@+id/nav_drawer_bottom">
+        <!--<item-->
+            <!--android:id="@+id/nav_send"-->
+            <!--android:icon="@drawable/ic_menu_send"-->
+            <!--android:title="Send" />-->
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help_outline_black_24dp"
+            android:title="Help" />
+    </group>
+
+</menu>

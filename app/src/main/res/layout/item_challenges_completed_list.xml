@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/challengeListLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/challengesCompletedListStep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="Challenge A"
+                android:textColor="@color/colorPrimaryText" />
+
+            <TextView
+                android:id="@+id/challengesCompletedListDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="Completed on"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/challengesCompletedListScore"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/circle"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="10"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:id="@+id/selectedOverlay"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/listOverlay"-->
+        <!--android:visibility="invisible" />-->
+
+</android.support.v7.widget.CardView>

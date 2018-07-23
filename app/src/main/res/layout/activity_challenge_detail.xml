@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    tools:context="com.george.exposureladder.challenges.ChallengeDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/challengeDetailLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/challengeDetailDesc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/challengeDetailDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_weight="0.8" />
+
+        <TextView
+            android:id="@+id/challengeDetailScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="6"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/challengeDetailDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="desc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/challengeDetailLinearLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        android:weightSum="100"
+        android:background="@color/colorDivider"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/challengeDetailCompleteButton"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="70"
+            android:gravity="center"
+            android:text="COMPLETE"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/challengeDetailEditButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:background="@color/colorPrimaryDark"
+            android:src="@android:drawable/ic_menu_edit"
+            android:tint="@color/colorLightPrimary" />
+
+        <ImageButton
+            android:id="@+id/challengeDetailDeleteButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:background="@color/colorPrimaryDark"
+            android:src="@android:drawable/ic_menu_delete"
+            android:tint="@color/colorLightPrimary" />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/challengeDetailFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_check"
+        android:onClick="handleCompleteFAB"/>
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
